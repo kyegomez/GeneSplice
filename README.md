@@ -1,4 +1,6 @@
-## Flash Genomics Model (FGM)
+# GeneSplice 🧬 
+
+![GeneSpliceBanner](genesplice-banner.png)
 
 My own attempt at a long context genomics model, leveraging recent advances in long context attention modeling (<a href="https://arxiv.org/abs/2205.14135">Flash Attention</a> + other hierarchical methods).
 
