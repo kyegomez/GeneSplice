@@ -26,8 +26,6 @@ Applying contrastive learning and self-supervised pre-training techniques to gen
 ## 5. Integration of Domain-Specific Knowledge
 Incorporating domain-specific knowledge, such as biological pathway information or gene function annotations, into gene expression transformers can enhance their interpretability and robustness. By leveraging this knowledge during training and inference, the model can prioritize relevant genes, identify key biological processes, and provide more meaningful insights. Integration of domain-specific knowledge can help bridge the gap between gene expression analysis and biological understanding, advancing the practical applications of gene expression transformers.
 
-## Conclusion
-Advancing the field of gene expression transformers requires explicit architectural model improvements. The proposed enhancements, including hierarchical attention mechanisms, adaptive learning rate scheduling, graph attention networks, contrastive learning with self-supervised pre-training, and integration of domain-specific knowledge, aim to push the state-of-the-art in gene expression analysis. By incorporating these improvements, we can expect to achieve more accurate predictions, better capture complex dependencies, and enhance the interpretability of gene expression models, ultimately advancing our understanding of gene regulation and its implications in various biological processes.
 
 ### What is gene expression? Can enformer create genes? 
 
@@ -70,6 +68,11 @@ Simulating Biological Systems: AI systems would simulate the behavior and dynami
 Accelerated Drug Discovery and Development: The holy grail AI system would revolutionize the drug discovery and development process. It would efficiently screen vast libraries of compounds, predict drug-target interactions, optimize drug candidates, and simulate drug metabolism and toxicity. This would significantly reduce the time, cost, and failure rates associated with traditional drug development pipelines.
 
 It's important to note that while the holy grail AI system would revolutionize biological research and healthcare, it does not create genes or proteins in the sense of generating entirely novel biological molecules. The system's strength lies in its ability to analyze vast amounts of biological data, simulate biological processes, predict functions, and assist in the design and engineering of genes and proteins to address specific research and therapeutic needs. The creation of new genes and proteins still remains a biological process governed by the laws of genetics and biochemistry.
+
+
+## Conclusion
+Advancing the field of gene expression transformers requires explicit architectural model improvements. The proposed enhancements, including hierarchical attention mechanisms, adaptive learning rate scheduling, graph attention networks, contrastive learning with self-supervised pre-training, and integration of domain-specific knowledge, aim to push the state-of-the-art in gene expression analysis. By incorporating these improvements, we can expect to achieve more accurate predictions, better capture complex dependencies, and enhance the interpretability of gene expression models, ultimately advancing our understanding of gene regulation and its implications in various biological processes.
+
 
 ## Citations
 
