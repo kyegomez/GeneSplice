@@ -73,6 +73,18 @@ It's important to note that while the holy grail AI system would revolutionize b
 ## Conclusion
 Advancing the field of gene expression transformers requires explicit architectural model improvements. The proposed enhancements, including hierarchical attention mechanisms, adaptive learning rate scheduling, graph attention networks, contrastive learning with self-supervised pre-training, and integration of domain-specific knowledge, aim to push the state-of-the-art in gene expression analysis. By incorporating these improvements, we can expect to achieve more accurate predictions, better capture complex dependencies, and enhance the interpretability of gene expression models, ultimately advancing our understanding of gene regulation and its implications in various biological processes.
 
+### 3 biggest problems in genomic expression modelling in the current SOTA Gene Expression transformers like Enformer
+
+In the current state-of-the-art (SOTA) gene expression transformers like Enformers, there are several challenges that researchers are working to address. Here are three significant problems in genomic expression modelling specific to SOTA gene expression transformers:
+
+Interpretability and Explainability: Gene expression transformers, including Enformers, often exhibit excellent predictive performance, but their interpretability and explainability can be limited. These models typically have a large number of parameters and complex architectures, making it challenging to understand the learned representations and how they relate to biological processes. Enhancing the interpretability and explainability of gene expression transformers is crucial for gaining insights into gene regulation mechanisms, identifying key genes or pathways, and building trust in the model's predictions.
+
+Generalization to Unseen Data: Gene expression transformers, like other deep learning models, can face challenges in generalizing to unseen or out-of-distribution data. The performance of these models heavily relies on the availability and representativeness of the training data. When encountering samples from novel cell types, tissues, or experimental conditions, the model may struggle to provide accurate predictions due to a lack of training data that captures the specific variations and complexities of those cases. Improving the generalization capabilities of gene expression transformers is essential to ensure their applicability in diverse biological contexts.
+
+Handling Limited and Noisy Data: Gene expression datasets can be limited in size, especially for rare diseases or specific conditions. Limited data can lead to overfitting, where the model fails to generalize well to new samples. Additionally, gene expression datasets can contain noise, batch effects, or technical artifacts that can negatively impact the model's performance. Developing strategies to handle limited data and effectively handle noise and artifacts is crucial to improve the robustness and reliability of gene expression transformers.
+
+Researchers are actively exploring various techniques to address these challenges. This includes developing interpretability methods specific to gene expression transformers, incorporating transfer learning or domain adaptation approaches to improve generalization, and exploring data augmentation techniques and advanced preprocessing methods to handle limited and noisy data. By overcoming these challenges, gene expression transformers can provide more reliable and interpretable predictions, leading to deeper insights into gene expression patterns and regulation.
+
 
 ## Citations
 
