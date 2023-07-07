@@ -40,7 +40,7 @@ from transformers import (AutoTokenizer, default_data_collator,
 
 # INTEGRATE GeneSplice selector + stable8bitfusedadam
 
-from GeneSplice.torchscale.architecture.decoder import Decoder
+from GeneSplice.torchscale.torchscale.architecture.decoder import Decoder
 from GeneSplice.utils import StableAdamWUnfused
 from GeneSplice.model import GeneSplice, GeneSpliceTokenizer
 ############ SETUP CONFIG

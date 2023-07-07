@@ -1,10 +1,10 @@
-from torchscale.architecture.decoder import DecoderConfig
 import torch
-from torchscale.architecture.decoder import Decoder
 
+from torchscale.architecture.decoder import DecoderConfig
+from torchscale.architecture.decoder import Decoder
 from torchscale.component.embedding import PositionalEmbedding
-from transformers import CLIPProcessor, CLIPModel, AutoTokenizer
-from flamingo_pytorch import PerceiverResampler
+from transformers AutoTokenizer
+
 
 from torch.nn import Embedding, Module
 import bitsandbytes
