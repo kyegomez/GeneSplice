@@ -1,11 +1,13 @@
 import torch
 
-from torchscale.torchscale.architecture.decoder import DecoderConfig, Decoder
-from torchscale.torchscale.component.embedding import PositionalEmbedding
+# from torchscale.torchscale.architecture.decoder import DecoderConfig, Decoder
+# from torchscale.torchscale.component.embedding import PositionalEmbedding
 
 from transformers import AutoTokenizer
 from torch.nn import Embedding, Module
 import bitsandbytes
+
+from GeneSplice import DecoderConfig, Decoder, PositionalEmbedding
 
 class GeneSpliceTokenizer:
     def __init__(self):
@@ -19,7 +21,6 @@ class GeneSpliceTokenizer:
 
     def tokenize_texts(self, texts):
         return self.tokenizer(texts, return_tensors="pt", padding=True, truncation=True).input_ids
-
 
 
 class GeneSplice(Module):
