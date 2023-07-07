@@ -13,8 +13,7 @@ from torch.distributed.fsdp import (
     ShardingStrategy,
 )
 from accelerate import Accelerator
-from accelerate.utils import ( #DummyOptim, 
-                              DummyScheduler,
+from accelerate.utils import (DummyOptim, DummyScheduler,
                               InitProcessGroupKwargs)
 from datasets import concatenate_datasets, load_dataset
 from lion_pytorch import Lion
@@ -372,8 +371,8 @@ def decoupled_optimizer(
         optimizer = Lion(grouped_params, lr=learning_rate, betas=(beta_1, beta_2),)
     elif optimizer_type == "adamw":
         optimizer = AdamW(grouped_params, lr=learning_rate, betas=(beta_1, beta_2),)
-    # elif optimizer_type == "deepspeed":
-    #     optimizer = DummyOptim(grouped_params, lr=learning_rate, betas=(beta_1, beta_2),)
+    elif optimizer_type == "deepspeed":
+        optimizer = DummyOptim(grouped_params, lr=learning_rate, betas=(beta_1, beta_2),)
     elif optimizer_type == "stable_adamw":
         optimizer = StableAdamWUnfused(
             grouped_params, lr=learning_rate, betas=(beta_1, beta_2),
@@ -645,4 +644,4 @@ def Train():
 
 
 if __name__ == "__main__":
-    main()
+    Train()
