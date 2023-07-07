@@ -1,0 +1,5 @@
+torch
+einops
+accelerate
+fairscale
+timm
