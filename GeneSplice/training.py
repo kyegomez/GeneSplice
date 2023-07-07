@@ -38,11 +38,11 @@ from transformers import (AutoTokenizer, default_data_collator,
 
 
 
-# INTEGRATE LONGNET selector + stable8bitfusedadam
+# INTEGRATE GeneSplice selector + stable8bitfusedadam
 
-from LongNet.torchscale.torchscale.architecture.decoder import Decoder
+from GeneSplice.torchscale.torchscale.architecture.decoder import Decoder
 from GeneSplice.utils import StableAdamWUnfused
-from GeneSplice.model import LongNetSelector, LongNetTokenizer
+from GeneSplice.model import GeneSplice, GeneSpliceTokenizer
 ############ SETUP CONFIG
 # import torch.distributed as dist
 
@@ -132,14 +132,14 @@ def fsdp(
         torch.nn.Module: The input model wrapped with FSDP.
     """
     if auto_wrap:
-        LongNet_auto_wrap_policy = partial(
+        GeneSplice_auto_wrap_policy = partial(
             transformer_auto_wrap_policy,
             transformer_layer_cls={
                 Decoder,
             },
         )
     else:
-        LongNet_auto_wrap_policy = None
+        GeneSplice_auto_wrap_policy = None
 
     if mp == "bf16":
         mp_fsdp = MixedPrecision(
@@ -187,7 +187,7 @@ def fsdp(
 
     model = FullyShardedDataParallel(
         model,
-        auto_wrap_policy=LongNet_auto_wrap_policy,
+        auto_wrap_policy=GeneSplice_auto_wrap_policy,
         mixed_precision=mp_fsdp,
         backward_prefetch=BackwardPrefetch.BACKWARD_PRE,
         sharding_strategy=sharding_strat_fsdp,
@@ -465,7 +465,7 @@ def Train():
 
 
     accelerator.init_trackers(
-        project_name="LongNet",
+        project_name="GeneSplice",
         config={
             "batch_size": CFG.BATCH_SIZE,
             "gradient_accumulate_every": CFG.GRADIENT_ACCUMULATE_EVERY,
@@ -482,9 +482,7 @@ def Train():
     set_seed(CFG.SEED)
 
 
-    # model = LongNet.to(accelerator.device)
-    # model = AutoModelForCausalLM.from_pretrained("YOUR MODEL", load_in_4bit=True, device_map="auto").to(accelerator.device)
-    LongNetSelector(mode="language").to(accelerator.device)
+    GeneSplice.to(accelerator.device)
 
     print_num_params(model, accelerator)
 
