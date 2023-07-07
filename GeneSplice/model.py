@@ -21,8 +21,8 @@ class GeneSpliceTokenizer:
 
     def tokenize_texts(self, texts):
         return self.tokenizer(texts, return_tensors="pt", padding=True, truncation=True).input_ids
-    
-    
+
+
 
 class GeneSplice(Module):
     def __init__(self):
