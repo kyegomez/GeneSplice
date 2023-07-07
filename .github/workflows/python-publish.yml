@@ -40,7 +40,6 @@
 
 
 
-
 name: Upload Python Package
 
 on:
@@ -68,11 +67,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest  # Add pytest to your dependencies
         pip install build
-        pip install -r requirements.txt
+        pip install -r requirements.txt  # if you have other dependencies specified
 
     - name: Run tests  # Add this step to run your tests
       run: |
-        python testing/main.py 
+        python -m pytest testing/main.py
+
     - name: Build package
       run: python -m build
 
