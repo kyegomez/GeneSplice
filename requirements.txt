@@ -3,3 +3,4 @@ einops
 accelerate
 fairscale
 timm
+pytest

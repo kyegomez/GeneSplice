@@ -68,6 +68,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest  # Add pytest to your dependencies
         pip install build
+        pip install -r requirements.txt
 
     - name: Run tests  # Add this step to run your tests
       run: |
