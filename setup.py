@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
   name = 'GeneSplice',
   packages = find_packages(exclude=[]),
-  version = '0.0.2',
+  version = '0.0.3',
   license='MIT',
   description = 'GeneSplice Model, Ultra-Long Rage Genomic Expression Modelling',
   author = 'Kye Gomez',
