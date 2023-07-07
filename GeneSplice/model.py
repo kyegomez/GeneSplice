@@ -1,8 +1,7 @@
 import torch
 
-from torchscale.architecture.decoder import DecoderConfig
-from torchscale.architecture.decoder import Decoder
-from torchscale.component.embedding import PositionalEmbedding
+from torchscale.torchscale.architecture.decoder import DecoderConfig, Decoder
+from torchscale.torchscale.component.embedding import PositionalEmbedding
 
 from transformers import AutoTokenizer
 from torch.nn import Embedding, Module
