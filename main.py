@@ -1,6 +1,6 @@
 import torch
 import pytest
-from GeneSplice import GeneSplice, GeneSpliceTokenizer  # Assuming the module name is GeneSplice
+from GeneSplice.model import GeneSplice, GeneSpliceTokenizer  # Assuming the module name is GeneSplice
 
 def test_tokenizer_initialization():
     tokenizer = GeneSpliceTokenizer()
