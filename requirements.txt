@@ -4,3 +4,5 @@ accelerate
 fairscale
 timm
 pytest
+transformers
+bitsandbytes
