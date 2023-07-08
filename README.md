@@ -8,16 +8,22 @@ Hello, brave explorers of the biological frontier! Welcome to the Geneplice proj
 
 ## What is Geneplice?
 
-Geneplice is an open-source tool designed on the principles held dear by the legendary physicist Richard Feynman. His unyielding belief in the simple truths beneath complex phenomena drives us forward, encouraging us to unearth the elegant patterns concealed within the labyrinthine world of biological data.
+Leveraging advanced machine learning techniques, particularly transformer-based models, in the realm of gene editing could revolutionize the treatment of genetic disorders and disease. GeneSplice aims to harness the capabilities of transformer models to expedite and streamline the creation of plasmid DNA sequences for CRISPR gene editing.
 
-Armed with the capability to process billions of tokens, Geneplice takes raw genomic, transcriptomic, and proteomic data and transforms them into a coherent atlas of life's secret blueprints. It is our mission to accelerate scientific breakthroughs in medical, biological, and genetic research, aiding fellow scientists and researchers in their quest to unravel the mysteries of life itself.
+## Objective
+
+The primary objective of GeneSplice is to provide an end-to-end solution for gene sequencing and editing:
+
+1. Obtain a DNA sample from a patient (for instance, via saliva).
+2. The DNA is sequenced and the data is processed by GeneSplice.
+3. GeneSplice identifies potentially harmful mutations and devises a new plasmid DNA sequence that can be used for CRISPR gene editing.
+4. The new DNA sequence is then inserted back into the patient to counteract the disorder.
 
 ## Features
 
 - **High-Performance Processing**: Efficiently manages billions of tokens concurrently.
 - **Advanced Machine Learning Techniques**: Harnesses state-of-the-art machine learning methodologies for accurate prediction and analysis.
 - **Interdisciplinary Integration**: Blends strategies from computer science, biology, statistics, and machine learning.
-- **User-Friendly Interface**: Crafted to be as accessible to newcomers to the field as it is to bioinformatics veterans.
 
 ## Getting Started
 

@@ -6,3 +6,4 @@ timm
 pytest
 transformers
 bitsandbytes
+flash-attn
