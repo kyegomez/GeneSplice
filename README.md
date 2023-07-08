@@ -4,8 +4,6 @@
 
 > "Nature uses only the longest threads to weave her patterns, so each small piece of her fabric reveals the organization of the entire tapestry." - Richard Feynman
 
-Hello, brave explorers of the biological frontier! Welcome to the Geneplice project, a shining beacon in the field of Bioinformatics Machine Learning (BioML), able to grapple with the overwhelming complexity of biological data at an unimaginable scale. This, indeed, is the holy grail you've been seeking.
-
 ## What is Geneplice?
 
 Leveraging advanced machine learning techniques, particularly transformer-based models, in the realm of gene editing could revolutionize the treatment of genetic disorders and disease. GeneSplice aims to harness the capabilities of transformer models to expedite and streamline the creation of plasmid DNA sequences for CRISPR gene editing.
@@ -19,11 +17,10 @@ The primary objective of GeneSplice is to provide an end-to-end solution for gen
 3. GeneSplice identifies potentially harmful mutations and devises a new plasmid DNA sequence that can be used for CRISPR gene editing.
 4. The new DNA sequence is then inserted back into the patient to counteract the disorder.
 
-## Features
+## Model Architecture
+The GeneSplice model is predicated on the transformer architecture, which is renowned for its proficiency in handling large datasets and its scalability, making it an ideal choice for genomic data processing.
 
-- **High-Performance Processing**: Efficiently manages billions of tokens concurrently.
-- **Advanced Machine Learning Techniques**: Harnesses state-of-the-art machine learning methodologies for accurate prediction and analysis.
-- **Interdisciplinary Integration**: Blends strategies from computer science, biology, statistics, and machine learning.
+The transformer model in GeneSplice utilizes four distinct tokens: G, T, A, C, which correspond to the four nucleobases in DNA. The model will be trained to comprehend different DNA sequences and their possible implications, and identify patterns associated with various health conditions.
 
 ## Getting Started
 
